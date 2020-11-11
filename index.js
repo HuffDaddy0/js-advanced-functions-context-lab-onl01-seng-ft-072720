@@ -8,6 +8,21 @@
  As a result, the lessons for this function will pass *and* it will be available
  for you to use if you need it!
  */
+const createEmployeeRecord = function(array){
+    let [ firstName, familyName, title, payPerHour ] = array
+    return {
+        firstName: firstName,
+        familyName: familyName,
+        title: title,
+        payPerHour: payPerHour,
+        timeInEvents: [],
+        timeInEvents: []
+    } 
+}
+
+const createEmployeeRecords = function(arrays){
+    return arrays.map(createEmployeeRecord);
+}
 
 let allWagesFor = function () {
     let eligibleDates = this.timeInEvents.map(function (e) {
